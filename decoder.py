@@ -1,3 +1,4 @@
+#!/usr/bin/python
 __author__ = 'micha'
 
 def get_addresses(levels):
@@ -7,8 +8,10 @@ def get_addresses(levels):
     print col, row
 
 while True:
+    print 'Enter the five levels you want to decode with spaces (enter "1" to exit):'
     x = raw_input()
     if x == "1":
+        print 'exiting decoder! bye'
         break
     levels = []
     for i in x.split():
